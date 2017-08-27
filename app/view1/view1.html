@@ -1,0 +1,10 @@
+<div ng-controller="View1Controller">
+    <form name="myForm">
+        <select ng-model="selectedItem" ng-change="update()">
+            <option ng-repeat="x in portfolios">{{x}}</option>
+        </select>
+
+    </form>
+
+    {{chart();}}
+</div>
